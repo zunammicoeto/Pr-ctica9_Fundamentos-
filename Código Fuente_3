@@ -1,0 +1,116 @@
+EJERCICIO 1
+//Abrir librerías 
+#include<stdio.h>
+
+/* 
+	Este programa determina cuánto ahorrar una persona en un año, también la cantidad de dinero ahorra en un mes
+*/
+
+//Bloque de variables 
+
+int main(){
+	
+	//variables reales y enteras
+	
+	float ahorroMes, mes, ahorroFinal;
+	int cantidad;
+
+	/*
+	Bloque de instrucciones 
+	*/
+	
+	ahorroMes = 0;
+	mes = 1;
+	do{
+		printf("Ingrese la cantidad que ahorrará:\n");
+		scanf("%d, &cantidad");
+		ahorroMes = ahorroMes + cantidad;
+		mes = mes + 1;
+		ahorroFinal=mes;
+		printf("El ahorro del mes es %f:\n", mes);
+	}while (ahorroMes <= 12);
+		printf("El ahorro final es %f:\n", ahorroMes);
+		
+	return 0;	
+}
+
+
+
+
+
+
+
+
+EJERCICIO 2
+//Abrir liberías 
+#include<stdio.h>
+
+/*
+Este programa determina de n cantidades, cuáles son menores o iguales a cero y cuántas mayores a cero
+*/
+
+int main(void){
+	
+	//bloque de variables 
+	
+	int i, num, cero, mayoresCero, menoresCero,n;
+	float cantidad;
+	
+	/*
+	Bloque de instrucciones 
+	*/
+	
+	cero = 0;
+	menoresCero =0;
+	mayoresCero = 0;
+	
+	printf ("Ingrese el valor de n: ");
+    scanf ("%d", &n);
+    (void) getchar ();
+    	
+	for (i =1; i <= num; i++){
+		
+		printf("Ingrese el valor de la cantidad\n:");
+		scanf("%d", &num);
+		(void) getchar ();
+		if(cantidad == 0)
+			cero == 0;
+		if(cantidad <0) 
+			menoresCero ++;
+		if(cantidad > 0);
+			mayoresCero ++;
+		
+	}
+	
+	printf("Valor de cero: %d\n", cero);
+	printf ("Valor de menores a cero: %d\n", menoresCero);
+	printf("Valor de mayor a cero: %d\n", mayoresCero);
+	
+	return 0; 
+	
+}
+
+
+
+EJERCICIO 3
+//Abrir librerías 
+#include<stdio.h>
+
+/* 
+	Este programa genera e imprime números pares que se enceuntran entre 0 y 100
+*/
+
+//Bloque de variables 
+
+#include <stdio.h>
+void main(){
+  //Definicion de variables
+ int _cont;
+ while(_cont<=100){//limita el conteo hasta 100
+    if(_cont%2==0){//verificar si es par
+      printf("%d, ",_cont);
+     }//END verificar si es par
+   _cont++;//Se incrementa la variable
+  }//END limita el conteo hasta 100
+ getch();
+}
